@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema"
+    id="example-cat-12345" name="Test Aeldari Units" revision="1"
+    battleScribeVersion="2.03" library="false" gameSystemId="test-system-id"
+    gameSystemRevision="1" type="catalogue">
+
+  <sharedSelectionEntries>
+    <selectionEntry id="autarch-12345" name="Autarch" type="model">
+      <profiles>
+        <profile type="Unit" id="autarch-profile" name="Autarch">
+          <characteristics>
+            <characteristic name="M">7</characteristic>
+            <characteristic name="WS">6</characteristic>
+            <characteristic name="BS">6</characteristic>
+            <characteristic name="S">3</characteristic>
+            <characteristic name="T">3</characteristic>
+            <characteristic name="W">3</characteristic>
+            <characteristic name="I">6</characteristic>
+            <characteristic name="A">4</characteristic>
+            <characteristic name="Ld">10</characteristic>
+            <characteristic name="Sv">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="aspect-shrine" name="Aspect Shrine">
+          This model can select a single Aspect Shrine upgrade, gaining additional special rules and equipment based on the chosen shrine.
+        </rule>
+        <rule id="independent-character" name="Independent Character">
+          This model can join other units during deployment and the game unless otherwise specified.
+        </rule>
+        <rule id="stubborn" name="Stubborn">
+          This model ignores penalties to Leadership when taking Morale checks.
+        </rule>
+        <rule id="fleet" name="Fleet (1)">
+          This model can re-roll one or more dice when making Run or Charge moves.
+        </rule>
+        <rule id="battle-hardened" name="Battle-Hardened (1)">
+          This model reduces the Strength of attacks that cause Instant Death by 1 for the purposes of determining whether it suffers Instant Death.
+        </rule>
+        <rule id="path-of-command" name="Path of Command">
+          This model allows its controlling player to make an additional Reaction during the Movement phase if it is on the battlefield and has not been removed as a casualty.
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" value="80"/>
+      </costs>
+      <constraints>
+        <constraint type="min" field="selections" value="1"/>
+        <constraint type="max" field="selections" value="1"/>
+      </constraints>
+      <categories>
+        <categoryLink id="autarch-category" name="HQ" primary="true"/>
+      </categories>
+      <infoLinks>
+        <infoLink name="Wargear">
+          This model is equipped with:
+          - Heavy Aspect Armour
+          - Improved Forceshield
+          - Plasma Grenades
+        </infoLink>
+        <infoLink name="Options">
+          This model may select up to two of the following:
+          - Chainsword (+2 pts)
+          - Shuriken Pistol (+2 pts)
+          - Power Weapon (+10 pts)
+          - Fusion Pistol (+15 pts)
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+
+</catalogue>
